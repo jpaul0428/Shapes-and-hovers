@@ -1,0 +1,36 @@
+.shapes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2.5px solid black;
+	height: 10rem;
+	width: 10rem;
+	/* transition-timing-function: step-end; */
+	transition: transform 500ms;
+}
+.shapes:hover {
+	background: rgba(230, 72, 151, 0.13);
+	transform: translateY(-10px) scale(1.25);
+}
+.circle {
+	border-radius: 50%;
+	transition: ease-in 500ms;
+	background: none;
+}
+.circle:hover {
+	color: white;
+	background-image: url(https://placeimg.com/640/480/tech/grayscale?t=1613938688874);
+}
+#firstsq:hover {
+	transform: rotate(45deg);
+}
+#rectanima {
+	background: Green;
+	transition: 500ms;
+	transition-timing-function: linear;
+	transform: none;
+}
+#rectanima:hover {
+	background: red;
+	height: 500px;
+}
