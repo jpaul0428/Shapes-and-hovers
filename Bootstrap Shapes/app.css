@@ -3,8 +3,9 @@
 	justify-content: center;
 	align-items: center;
 	border: 2.5px solid black;
-	height: 10rem;
-	width: 10rem;
+	height: 300px;
+	width: 300px;
+	margin: 5%;
 	/* transition-timing-function: step-end; */
 	transition: transform 500ms;
 }
@@ -33,4 +34,14 @@
 #rectanima:hover {
 	background: red;
 	height: 500px;
+}
+/* add a media query to stack images on smaller screens -- 10rem */
+@media screen and (min-width: 768px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+	.shapes {
+		width: 25%;
+	}
 }
